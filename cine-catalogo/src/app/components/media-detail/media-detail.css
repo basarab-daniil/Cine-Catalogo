@@ -1,0 +1,34 @@
+/* Riquadro principale del dettaglio */
+.dettaglio-card {
+  background-color: #e6f7ff; /* Colore di sfondo azzurro chiaro per distinguerlo */
+  border: 2px solid #91d5ff; /* Bordo azzurro un po' più scuro */
+  border-radius: 8px; /* Angoli arrotondati */
+  padding: 20px;
+  
+  /* Usiamo flex per affiancare l'immagine a sinistra e il testo a destra */
+  display: flex;
+  gap: 20px; /* Spazio tra l'immagine e il blocco di testo */
+  margin-top: 20px;
+}
+
+/* Stile per ridimensionare bene la locandina */
+.locandina {
+  max-width: 150px; /* Fissa la larghezza massima così non esplode se l'immagine è enorme */
+  height: auto; /* Mantiene le proporzioni corrette (non schiaccia l'immagine) */
+  border-radius: 5px; /* Arrotonda un po' anche l'immagine */
+  object-fit: cover; /* Assicura che l'immagine riempia bene il suo spazio */
+}
+
+/* Rende la trama un po' più ordinata e facile da leggere */
+.info-testo p {
+  font-size: 16px;
+  line-height: 1.5; /* Aumenta lo spazio tra le righe del testo */
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+/* Togliamo il margine sopra il titolo per allinearlo all'immagine */
+.info-testo h2 {
+  margin-top: 0;
+  color: #0050b3; /* Un blu scuro per il titolo */
+}

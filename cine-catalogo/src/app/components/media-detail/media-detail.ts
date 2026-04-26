@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input} from '@angular/core';
+import { Media } from '../../models/media.model';
 
 @Component({
   selector: 'app-media-detail',
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './media-detail.html',
   styleUrls: ['./media-detail.css'],
 })
-export class MediaDetail {}
+export class MediaDetail {
+  @Input() itemSelezionato!: Media;
+}

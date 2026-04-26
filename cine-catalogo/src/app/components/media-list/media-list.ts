@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { Media } from '../../models/media.model';
+import { MediaDetail } from '../media-detail/media-detail';
 
 @Component({
   selector: 'app-media-list',
   standalone: true,
+  imports: [MediaDetail],
   templateUrl: './media-list.html',
   styleUrls: ['./media-list.css'],
 })
-export class MediaListComponent {
+export class MediaList{
   catalogo: Media[] = [
     {
       id: 1,
@@ -70,4 +72,8 @@ export class MediaListComponent {
       imageUrl: 'https://images.justwatch.com/poster/341932677/s718/spider-man-un-nuovo-universo.jpg'
     }
   ];
+  elementoSelezionato: Media | null = null;
+  seleziona(elemento: Media) {
+    this.elementoSelezionato = elemento;
+  }
 }
