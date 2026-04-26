@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { Media } from '../../models/media.model';
+
 @Component({
   selector: 'app-media-list',
-  imports: [],
+  standalone: true,
   templateUrl: './media-list.html',
-  styleUrl: './media-list.css',
+  styleUrls: ['./media-list.css'],
 })
-export class MediaList {
+export class MediaListComponent {
   catalogo: Media[] = [
     {
       id: 1,

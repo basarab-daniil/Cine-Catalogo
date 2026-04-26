@@ -1,1 +1,22 @@
-<p>media-list works!</p>
+<div class="media-container">
+  
+  @for (media of catalogo; track media.id) {
+    
+    <div class="media-card">
+      
+      <h2>
+        @if (media.tipo === 'Film') {
+          <span>🎬</span>
+        } @else {
+          <span>📺</span>
+        }
+        {{ media.titolo }}
+      </h2>
+      
+      <p><strong>Regista:</strong> {{ media.regista }}</p>
+      
+    </div>
+
+  }
+
+</div>
