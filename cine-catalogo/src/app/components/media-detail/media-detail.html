@@ -9,6 +9,14 @@
     <p><strong>Durata:</strong> {{ itemSelezionato.durata }} minuti</p>
     
     <p><strong>Trama:</strong> {{ itemSelezionato.trama }}</p>
+    <p>
+      <strong>Stato:</strong>
+      @if (itemSelezionato.visto) {
+        '✅ Già visto'
+      } else {
+        '❌ Da vedere'
+      }
+    </p>
   </div>
 
 </div>
